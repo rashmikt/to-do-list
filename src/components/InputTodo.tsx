@@ -7,7 +7,7 @@ const InputTodo = () => {
     e.preventDefault();
     try {
       const body = { detail };
-      const response = await fetch("http://localhost:5000/todos", {
+      const response = await fetch("https://todolist-api-rwm3.onrender.com/todos", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)

@@ -8,7 +8,7 @@ const EditTodo = ({ todo }: any) => {
         try {
             const body = { detail };
             const response = await fetch(
-                `http://localhost:5000/todos/${todo.id}`,
+                `https://todolist-api-rwm3.onrender.com/todos/${todo.id}`,
                 {
                     method: "PUT",
                     headers: { "Content-Type": "application/json" },

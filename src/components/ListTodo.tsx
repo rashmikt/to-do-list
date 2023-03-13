@@ -9,7 +9,7 @@ const ListTodo = () => {
 
   const deleteTodo = async (id: number) => {
     try {
-      const deleteTodo = await fetch(`http://localhost:5000/todos/${id}`, {
+      const deleteTodo = await fetch(`https://todolist-api-rwm3.onrender.com/${id}`, {
         method: "DELETE"
       });
 
@@ -21,7 +21,7 @@ const ListTodo = () => {
 
   const getTodos = async () => {
     try {
-      const response = await fetch("http://localhost:5000/todos");
+      const response = await fetch("https://todolist-api-rwm3.onrender.com/todos");
       const jsonData = await response.json();
 
       setTodos(jsonData);
